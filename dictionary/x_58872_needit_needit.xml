@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="HR" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What Needed" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="When Needed?" mandatory="true" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element attributes="encode_utf8=false" label="Request for" mandatory="true" max_length="32" name="u_reference_2" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
